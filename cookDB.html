@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The cook DB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<style>
+    .section-img{
+        width: 50% !important;
+        height: 50%;
+        float: left;
+    }
+    #img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+</style>
+<body>
+    <h1 class="text-danger fw-bold text-center pt-3 pb">Welcome Cook DB</h1> <hr class="bg-danger">
+    <header>
+        <h2 class="text-primary text-center fst-italic">Search Your favourite cook</h2>
+        <div class="input-group mb-3 w-50 mx-auto">
+            <input id="input-field" type="text" class="form-control" placeholder="Search Your Fabourite cook.." aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button id="search-button" class="btn btn-outline-secondary" type="button" >Search</button>
+          </div>
+    </header>
+     <!-- Error messeage no result found -->
+     <h3 id="error" class="text-danger text-center"></h3>
+     <!-- load gif -->
+    <div  id="img">
+            <img  src="image.gif" alt="">
+    </div>
+
+<!-- show each detail -->
+    <section class="float-end w-25 ">
+        <div id="detail" class="row row-cols-1 row-cols-md-1 g-4"></div>
+    </section>\
+   
+    <!-- Section body -->
+    <section id="display"  class="w-50 mx-auto">
+        <div id="parent-div" class="row row-cols-1 row-cols-md-2 g-4">
+          </div>
+    </section>
+
+<script src="cook.js"></script>
+</body>
+</html>
